@@ -36,16 +36,16 @@ function findContentChildren(s, g) {
   g.sort((a, b) => a - b);
 
   // Inisialisasi awal tingkat greed anak sebelum diberi cookie
-  let child = 0;
+  let childGreed = 0;
 
-  // Cek tingkat greed anak setelah diberi cookie sesuai atau tidak
+  // Cek tingkat greed anak setelah diberi cookie sesuai keinginan atau tidak
   for (const cookie of s) {
-    if (cookie >= g[child]) {
-      child++;
+    if (cookie >= g[childGreed]) {
+      childGreed++;
     }
   }
 
-  return child;
+  return childGreed;
 }
 
 // Contoh penggunaan
