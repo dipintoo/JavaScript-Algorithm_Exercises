@@ -7,18 +7,21 @@
 // IDE
 // 1. Karena problemnya mementingkan suatu urutan operasi metode stack sepertinya cocok
 // 2. Buat object berisi pasangan key (kurung buka) dan value (kurung tutup)
-// 3. // KALAU INPUT KURUNG BUKA
-// Input: "["
-// Cek, apakah char ini ada dalam bracketMap (key)
-// Ada. Kita push
-// stack = ["["]
 
-// KALAU INPUT KURUNG TUTUP
-// Input: "]"
-// Kita ambil input terakhir yang ada di dalam stack ("[")
-// Cek, Dia cocok ga dengan input terakhir dalam stack
-// Jika cocok, reset stack menjadi kosong. stack = [ ]
-// Jika ga, return false
+// 3. // KALAU INPUT KURUNG BUKA, misal:
+//    - Input: "["
+//    - Cek, char ini ada ga di dalam daftar key yang ada pada objek bracketMap
+//    - Jika Ada, Kita push ke stack
+//    - stack = ["["]
+
+//    KALAU INPUT KURUNG TUTUP, misal:
+//    - Input: "]"
+//    - Kita ambil input terakhir yang ada di dalam stack ("[")
+//    - Cek, char saat ini cocok ga dengan char terakhir dalam stack
+//    - Jika cocok (pasangan kurung buka tutup), reset stack menjadi kosong
+//      karena char sudah menemukan pasangannya
+//    - stack = [ ]
+//    - Jika ga, return false karena tidak ada pasangannya
 
 // CODE
 function isValid(s) {
