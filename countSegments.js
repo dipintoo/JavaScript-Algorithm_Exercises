@@ -13,7 +13,7 @@
 
 // IDE ----------------------------------------------------------------------
 // 1. Kita split() kalimat input menjadi array yang berisikan segmen-segmen kata
-// 2. Kita filter() juga string kosong (jika ada) untuk menghindarinya agar tidak ikut terhitung
+// 2. Kita filter() juga string kosong (jika ada) agar tidak ikut terhitung
 // 3. Hitung panjang array (.length)
 
 function countSegments(s) {
