@@ -32,19 +32,19 @@ function longestPalindrome(s) {
   }
 
   // Inisialisasi panjang palindrome
-  let length = 0;
-  let OddFreq = false;
+  let PalLength = 0;
+  let hasOddFreq = false;
 
   for (const [_, freq] of charFreq) {
     // Memeriksa panjang palindrome ganjil atau genap
-    length += Math.floor(freq / 2) * 2;
+    PalLength += Math.floor(freq / 2) * 2;
     // Jika ganjil
     if (freq % 2 === 1) {
-      OddFreq = true;
+      hasOddFreq = true;
     }
   }
 
-  return OddFreq ? length + 1 : length + 0;
+  return hasOddFreq ? PalLength + 1 : PalLength + 0;
 }
 
 // Contoh penggunaan
