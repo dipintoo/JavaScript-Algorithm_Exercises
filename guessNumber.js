@@ -17,6 +17,7 @@
 // Input: n = 1, pick = 1
 // Output: 1
 
+// CODE ---------------------------------------------------------------------------------------------------------------
 function guessNumber(n) {
   // Inisialisasi Batas Kiri dan Kanan
   let left = 1;
